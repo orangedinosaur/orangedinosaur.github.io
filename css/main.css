@@ -53,11 +53,11 @@ header .app-showcase {
   text-align: right;
 }
 header .block {
-  padding-top: 70px;
+  padding-top: 90px;
 }
 header .block .logo {
   display: inline-block;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 header .block h2 {
   margin-bottom: 15px;
@@ -74,7 +74,7 @@ header .block .download-btn a {
 }
 
 footer {
-  padding: 60px 0;
+  padding: 20px 0;
   background: #fafafa;
   border-top: 1px solid #d7d7d7;
 }

@@ -54,14 +54,14 @@ cols    1     2      3
 px      68    160    252    */
 @media only screen and (max-width: 767px) {
   header {
-    padding: 50px 0;
+    padding: 20px 0;
   }
   header .app-showcase img {
-    width: 80%;
-    max-width: 300px;    
+    width: 100%;
+    max-with: 400px;
   }
   header .block .logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   header .block p {
     color: #fff;
