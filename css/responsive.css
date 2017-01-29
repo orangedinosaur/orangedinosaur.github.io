@@ -57,7 +57,8 @@ px      68    160    252    */
     padding: 50px 0;
   }
   header .app-showcase img {
-    max-width: 100%;
+    width: 80%;
+    max-width: 300px;    
   }
   header .block .logo {
     margin-bottom: 20px;
@@ -68,30 +69,6 @@ px      68    160    252    */
   .download-btn a img {
     width: 130px;
   }
-  #showcase {
-    padding-bottom: 50px;
-  }
-  #showcase .block img {
-    max-width: 100%;
-    margin-bottom: 0;
-  }
-  #feature {
-    padding: 80px 0;
-  }
-  #team .media {
-    margin-bottom: 20px;
-  }
-  #team .media .pull-left {
-    width: 130px;
-    padding-right: 10px;
-  }
-  #team .media .media-heading {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  #team .media p {
-    font-size: 14px;
-  }
 }
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
@@ -101,6 +78,6 @@ px      68    160    252    */
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
 /*	Retina media query.
-	Overrides styles for devices with a 
+	Overrides styles for devices with a
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
