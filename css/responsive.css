@@ -62,8 +62,7 @@ px      68    160    252    */
   }
 
   header .app-showcase img {
-    width: 100%;
-    max-width: 400px;
+    width: 0%;    
   }
   header .block .logo {
     margin-bottom: 10px;
