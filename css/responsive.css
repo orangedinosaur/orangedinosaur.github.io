@@ -55,6 +55,7 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
   header {
     padding: 20px 0;
+    background-image: url("../images/hero-small-bg.jpg");
   }
 
   header .block {
@@ -62,7 +63,7 @@ px      68    160    252    */
   }
 
   header .app-showcase img {
-    width: 0%;    
+    width: 0%;
   }
   header .block .logo {
     margin-bottom: 10px;
