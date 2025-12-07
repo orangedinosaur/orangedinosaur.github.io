@@ -34,25 +34,25 @@
     --section-padding: 6rem 2rem;
     --section-padding-mobile: 4rem 1.5rem;
 
-    /* Button sizes (height) */
-    --button-volume-size: 30px;           
-    --button-mute-size: 15px;             
-    --button-power-size: 45px;            
+    /* Button sizes (height) - as % of phone height */
+    --button-volume-size: 5%;              
+    --button-mute-size: 2.5%;              
+    --button-power-size: 7.5%;             
 
-    /* Button width (thickness) */
-    --button-width: 2px;                 
+    /* Button width (thickness) - proportional */
+    --button-width: 0.5%;                  
 
-    /* Button positions (top offset from phone top) */
-    --button-mute-top: 80px;              
-    --button-volume-up-top: 110px;        
-    --button-volume-down-top: 150px;      
-    --button-power-top: 120px;            
+    /* Button positions (as % from top) */
+    --button-mute-top: 18%;
+    --button-volume-up-top: 23%;
+    --button-volume-down-top: 30%;
+    --button-power-top: 25%;
 
     /* Button gap between left buttons */
-    --button-gap: 10px;                   
+    --button-gap: 10px;
 
     /* Button styling */
-    --button-color: #0d0d0d;             
+    --button-color: #0d0d0d;
     --button-border-radius: 2px;          
 }
 
@@ -555,18 +555,7 @@ a:hover {
 @media (max-width: 767px) {
     :root {
         --section-padding: var(--section-padding-mobile);
-
-        /* Scale down buttons on mobile */
-        --button-volume-size: 24px;
-        --button-mute-size: 12px;
-        --button-power-size: 36px;
-        --button-width: 2px;
-
-        /* Adjust positions for smaller frames */
-        --button-mute-top: 60px;
-        --button-volume-up-top: 85px;
-        --button-volume-down-top: 120px;
-        --button-power-top: 95px;
+        /* Button overrides removed - now scales automatically with percentages */
     }
 
     .hero {
