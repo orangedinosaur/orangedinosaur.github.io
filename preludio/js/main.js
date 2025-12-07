@@ -35,8 +35,8 @@
 
         const observer = new IntersectionObserver(handleIntersection, observerOptions);
 
-        // Observe all feature cards and screenshot placeholders
-        const elementsToAnimate = document.querySelectorAll('.feature-card, .screenshot-placeholder');
+        // Observe all feature cards and phone mockups
+        const elementsToAnimate = document.querySelectorAll('.feature-card, .phone-mockup');
         elementsToAnimate.forEach(element => {
             observer.observe(element);
         });
@@ -61,7 +61,7 @@
      * Fallback for browsers without IntersectionObserver
      */
     function showAllElements() {
-        const elements = document.querySelectorAll('.feature-card, .screenshot-placeholder');
+        const elements = document.querySelectorAll('.feature-card, .phone-mockup');
         elements.forEach(element => {
             element.classList.add('animate-in');
         });
@@ -116,7 +116,7 @@
             card.style.animationDelay = `${index * 0.1}s`;
         });
 
-        const screenshots = document.querySelectorAll('.screenshot-placeholder');
+        const screenshots = document.querySelectorAll('.phone-mockup');
         screenshots.forEach((screenshot, index) => {
             screenshot.style.animationDelay = `${index * 0.1}s`;
         });
