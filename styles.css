@@ -89,7 +89,7 @@ body {
     padding: 1rem 2rem;
     background: var(--background-alt);
     border: 2px solid var(--border-color);
-    border-radius: 12px;
+    border-radius: 32px;
     color: var(--text-dark);
     text-decoration: none;
     font-size: 1.125rem;
