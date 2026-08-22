@@ -185,7 +185,7 @@
         <header>
             <h1>Privacy Policy</h1>
             <p class="effective-date">
-                Effective Date: November 23, 2025 &nbsp;|&nbsp; Last Updated: July 10, 2026
+                Effective Date: November 23, 2025 &nbsp;|&nbsp; Last Updated: August 22, 2026
             </p>
         </header>
 
@@ -195,7 +195,7 @@
             <h2>Information We Collect</h2>
 
             <h3>Information Stored Locally on Your Device</h3>
-            <p>Preludio stores all of your personal content locally on your device. This includes:</p>
+            <p>Preludio stores your personal content locally on your device. This includes:</p>
             <ul>
                 <li><strong>User Profile Information:</strong> Name and avatar color preference</li>
                 <li><strong>Practice Data:</strong> Practice session dates, durations, mood ratings, and notes</li>
@@ -203,15 +203,7 @@
                 <li><strong>Lesson Notes:</strong> Text entries, photos, and videos you capture during lessons</li>
                 <li><strong>App Preferences:</strong> Settings such as metronome tempo and review mode preferences</li>
             </ul>
-            <p>This data is stored in a local database on your device and is not transmitted to our servers.</p>
-
-            <h3>Information Sent for Processing (AI Summaries)</h3>
-            <p>If you enable AI summaries, the following data is sent to our AI summary service for processing:</p>
-            <ul>
-                <li><strong>Lesson Note Content:</strong> The text of your lesson notes, tags, and timestamps</li>
-                <li><strong>Entry Metadata:</strong> Creation dates and entry types</li>
-            </ul>
-            <p>Note: Photos and videos are NOT sent to our servers—only text content and metadata are transmitted.</p>
+            <p>This data is stored in a local database on your device and is not transmitted to our servers. If you turn on iCloud Sync, some of this data is also stored in your own private iCloud database — see <a href="#icloud-sync-optional">iCloud Sync</a> below.</p>
 
             <h3>Information Collected Automatically</h3>
             <p>When you use the App, we automatically collect certain information to help us improve the App and fix issues:</p>
@@ -241,10 +233,8 @@
             <p>We use the information we collect to:</p>
             <ul>
                 <li><strong>Provide App Functionality:</strong> Store and manage your practice data, songs, and lesson notes locally on your device</li>
-                <li><strong>Generate AI Summaries:</strong> Process your lesson notes through our AI summary service (hosted on Cloudflare, powered by OpenAI) to create summaries (optional, can be disabled)</li>
                 <li><strong>Improve the App:</strong> Analyze anonymous usage patterns to understand which features are most valuable</li>
                 <li><strong>Fix Issues:</strong> Identify and resolve bugs, crashes, and technical problems</li>
-                <li><strong>Process Purchases:</strong> Facilitate in-app purchases through Apple's App Store</li>
             </ul>
 
             <h2>Third-Party Services</h2>
@@ -256,25 +246,24 @@
             <h3>Sentry (Error Tracking)</h3>
             <p>We use Sentry to collect crash reports and error logs. This helps us identify and fix problems in the App. For more information, see <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry's Privacy Policy</a>.</p>
 
-            <h3>Cloudflare Workers (AI Summaries)</h3>
-            <p>For users who enable AI summaries, we operate an AI summary service hosted on Cloudflare Workers. When you request a summary, your lesson note text, tags, and timestamps are sent to our service, which forwards them to OpenAI's GPT-4o-mini for processing. The generated summary is then returned to your device and stored locally.</p>
+            <h3 id="icloud-sync-optional">Apple iCloud (Sync — Optional)</h3>
+            <p>If you turn on iCloud Sync in Settings, your practice data is stored in <strong>your own private iCloud database</strong>, under your Apple Account, so it can be shared between your devices.</p>
+            <p><strong>What is synced:</strong> profiles, practice sessions, lesson note text, songs and ratings, practice lists, achievements, reminders, and the photos and audio recordings you capture.</p>
+            <p><strong>What is not synced:</strong> videos, unless you choose to sync a specific video (or a lesson's videos) yourself. Videos you have not opted in remain on the device that recorded them.</p>
             <p><strong>Important:</strong></p>
             <ul>
-                <li>This is an optional feature that can be disabled in Settings</li>
-                <li>Only text content is sent—photos and videos remain on your device</li>
-                <li>Generated summaries are stored locally on your device</li>
-                <li>Your lesson data is deleted immediately after processing—we do not retain your lesson content after the summary is generated</li>
+                <li>iCloud Sync is <strong>off by default</strong> and can be turned off again at any time in Settings</li>
+                <li>Your synced data goes to your private iCloud database — it is <strong>not</strong> sent to our servers, and we have no access to it</li>
+                <li>Because the data lives in your iCloud account, it is <strong>not</strong> removed when you uninstall the App. You can delete it from your device's iCloud settings</li>
+                <li>Apple's handling of your data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a></li>
             </ul>
-            <p>For more information, see <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare's Privacy Policy</a> and <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">OpenAI's Privacy Policy</a>.</p>
-
-            <h3>Apple (In-App Purchases)</h3>
-            <p>Purchases are processed through Apple's App Store. We do not have access to your payment information. Apple's handling of your data is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's Privacy Policy</a>.</p>
 
             <h2>Data Storage and Security</h2>
             <ul>
-                <li><strong>Local Storage:</strong> All your personal content (practice data, songs, lesson notes, photos, and videos) is stored locally on your device</li>
-                <li><strong>Limited Cloud Processing:</strong> With the exception of AI summaries (optional), we do not upload your personal content to remote servers. When enabled, only lesson note text is sent to our AI summary service (which forwards it to OpenAI for processing)—the generated summary is returned and stored locally</li>
-                <li><strong>Data Deletion:</strong> Your locally stored data is deleted when you uninstall the App</li>
+                <li><strong>Local Storage:</strong> Your personal content (practice data, songs, lesson notes, photos, and videos) is stored locally on your device. Photos, videos, and audio recordings never leave your device</li>
+                <li><strong>No Upload to Our Servers:</strong> We do not upload your personal content to our servers</li>
+                <li><strong>iCloud Sync (Optional):</strong> If you enable iCloud Sync, your practice data is also stored in your own private iCloud database under your Apple Account. It is not accessible to us. See <a href="#icloud-sync-optional">Apple iCloud</a> above</li>
+                <li><strong>Data Deletion:</strong> Your locally stored data is deleted when you uninstall the App. Data synced to iCloud persists in your Apple Account until you delete it from your device's iCloud settings</li>
                 <li><strong>Anonymous Analytics:</strong> Analytics data sent to third-party services uses only anonymous identifiers</li>
             </ul>
 
@@ -283,7 +272,7 @@
             <ul>
                 <li><strong>Camera:</strong> To capture photos and videos for your lesson notes</li>
                 <li><strong>Photo Library:</strong> To save captured photos and videos to your device's photo library (optional feature)</li>
-                <li><strong>Microphone:</strong> For audio playback features such as the metronome</li>
+                <li><strong>Microphone:</strong> For the Tuner's live pitch/note detection and to record audio during practice sessions</li>
             </ul>
             <p>You can manage these permissions at any time through your device's Settings.</p>
 
@@ -295,7 +284,6 @@
             <ul>
                 <li><strong>Access Your Data:</strong> All your practice data is stored locally on your device and accessible within the App</li>
                 <li><strong>Delete Your Data:</strong> You can delete all your data by uninstalling the App from your device</li>
-                <li><strong>Disable AI Summaries:</strong> You can disable AI summary generation at any time in Settings → Lesson Settings</li>
                 <li><strong>Opt Out of Analytics:</strong> You can limit analytics collection by enabling "Limit Ad Tracking" in your device settings</li>
             </ul>
 
@@ -312,12 +300,12 @@
             <div class="contact-section">
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
-                <p class="contact-email"><a href="mailto:privacy@neirohalabs.com">privacy@neirohalabs.com</a></p>
+                <p class="contact-email"><a href="mailto:hello@neirohalabs.com">hello@neirohalabs.com</a></p>
             </div>
         </main>
 
         <footer>
-            <p>Copyright &copy; 2025 Neiroha Labs LLC. All rights reserved.</p>
+            <p>Copyright &copy; 2025&ndash;2026 Neiroha Labs LLC. All rights reserved.</p>
         </footer>
     </div>
 </body>
