@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathlet - Math facts, mastered.</title>
+    <meta name="description" content="Quick daily practice for addition, subtraction, multiplication, and division. Every fact tracked, so you always know what to practice next.">
+    <meta property="og:title" content="Mathlet - Math facts, mastered.">
+    <meta property="og:description" content="Quick daily practice for addition, subtraction, multiplication, and division. Every fact tracked.">
+    <meta property="og:image" content="https://www.neirohalabs.com/mathlet/images/app-icon.png">
+    <meta name="apple-itunes-app" content="app-id=6821665869">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --background: #f5f6fa;
+            --surface: #fff;
+            --green: #31bf9c;
+            --blue: #2b8cfd;
+            --yellow: #fcbe43;
+            --purple: #9b77fd;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.47059;
+            letter-spacing: -0.022em;
+            color: var(--text);
+            background-color: var(--background);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+
+        a {
+            color: #06c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+
+        .hero {
+            text-align: center;
+            padding: 96px 0 72px;
+        }
+
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.0625;
+            font-weight: 700;
+            letter-spacing: -0.015em;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 21px;
+            line-height: 1.381;
+            letter-spacing: .011em;
+            color: var(--secondary);
+            max-width: 560px;
+            margin: 0 auto 36px;
+        }
+
+        .operations {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .operations span {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .app-store-badge img {
+            height: 54px;
+            width: auto;
+        }
+
+        /* Features */
+
+        .feature {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 64px;
+            padding: 72px 0;
+        }
+
+        .feature:nth-of-type(even) .feature-text {
+            order: 2;
+        }
+
+        .feature-text h2 {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -0.005em;
+            margin-bottom: 16px;
+        }
+
+        .feature-text p {
+            font-size: 19px;
+            line-height: 1.4211;
+            color: var(--secondary);
+        }
+
+        .screenshot {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            border-radius: 36px;
+            border: 8px solid #1d1d1f;
+            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12);
+            background: var(--surface);
+        }
+
+        /* Closing call to action */
+
+        .closing {
+            text-align: center;
+            padding: 72px 0 96px;
+        }
+
+        .closing h2 {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 700;
+            margin-bottom: 32px;
+        }
+
+        footer {
+            border-top: 1px solid #d2d2d7;
+            padding: 24px 0 40px;
+            color: #86868b;
+            font-size: 12px;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        footer nav a {
+            color: #424245;
+            margin-left: 20px;
+        }
+
+        footer nav a:first-child {
+            margin-left: 0;
+        }
+
+        @media (max-width: 734px) {
+            .hero {
+                padding: 64px 0 40px;
+            }
+
+            .app-icon {
+                width: 96px;
+                height: 96px;
+                border-radius: 22px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .tagline {
+                font-size: 19px;
+            }
+
+            .feature {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                padding: 48px 0;
+                text-align: center;
+            }
+
+            .feature:nth-of-type(even) .feature-text {
+                order: 0;
+            }
+
+            .feature-text h2,
+            .closing h2 {
+                font-size: 30px;
+            }
+
+            .screenshot {
+                max-width: 260px;
+            }
+
+            footer .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero container">
+            <img class="app-icon" src="images/app-icon.png" alt="Mathlet app icon">
+            <h1>Math facts, mastered.</h1>
+            <p class="tagline">Quick daily practice for addition, subtraction, multiplication, and division. Every fact tracked, so you always know what to practice next.</p>
+            <div class="operations" aria-hidden="true">
+                <span style="background: var(--green)">+</span>
+                <span style="background: var(--blue)">&minus;</span>
+                <span style="background: var(--yellow)">&times;</span>
+                <span style="background: var(--purple)">&divide;</span>
+            </div>
+            <a class="app-store-badge" href="https://apps.apple.com/app/id6821665869" aria-label="Download on the App Store">
+                <img src="images/download-app-store.svg" alt="Download on the App Store">
+            </a>
+        </section>
+
+        <div class="container">
+            <section class="feature">
+                <div class="feature-text">
+                    <h2>Tap it or say it.</h2>
+                    <p>Answer with the keypad, or just say the answer out loud. Voice answers are understood right on your device and never recorded.</p>
+                </div>
+                <img class="screenshot" src="images/screenshots/practice.jpg" alt="Practicing 7 times 8 with a voice answer of 56" loading="lazy">
+            </section>
+
+            <section class="feature">
+                <div class="feature-text">
+                    <h2>Progress you can see.</h2>
+                    <p>See how well each operation is known and how fast, with a daily streak and every recent practice in one place.</p>
+                </div>
+                <img class="screenshot" src="images/screenshots/home.jpg" alt="Home screen with progress for each operation and recent practice" loading="lazy">
+            </section>
+
+            <section class="feature">
+                <div class="feature-text">
+                    <h2>See exactly what to practice.</h2>
+                    <p>All 144 times-table facts, tracked one by one for accuracy and speed. Practice can focus on the facts missed.</p>
+                </div>
+                <img class="screenshot" src="images/screenshots/progress.jpg" alt="Progress grid of all 144 multiplication facts" loading="lazy">
+            </section>
+        </div>
+
+        <section class="closing container">
+            <h2>Make solid progress, day by day.</h2>
+            <a class="app-store-badge" href="https://apps.apple.com/app/id6821665869" aria-label="Download on the App Store">
+                <img src="images/download-app-store.svg" alt="Download on the App Store">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; 2026 Neiroha Labs LLC. All rights reserved.</p>
+            <nav>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:hello@neirohalabs.com">Contact</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
